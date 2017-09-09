@@ -505,7 +505,8 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    //items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    items[i].style.transform = 'translateX(' + 100 * phase + 'px)';
   }
 
   // 再次使用User Timing API。这很值得学习
@@ -532,9 +533,9 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
+    elem.style.left = (i % cols) * s + Math.sin(i % 5) + 'px';
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     movingPizzas1.appendChild(elem);
   }
-  updatePositions();
+  //updatePositions();
 });
