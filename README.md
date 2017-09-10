@@ -6,20 +6,20 @@
 
 ### 指南
 
-####Part 1: 优化 index.html 的 PageSpeed Insights 得分
+#### Part 1: 优化 index.html 的 PageSpeed Insights 得分
 
-###图片优化
+### 图片优化
 使用google pagespeed推荐的工具jpegtran和optipng无损压缩图片，或者使用[https://tinypng.com/](https://tinypng.com/)网站在线压缩图片。
 
-###优化css
+### 优化css
 将style.css文件中的样式复制到index.html中使用内联样式。
 
-###部署github page
+### 部署github page
 上传代码到github后部署github page网页，github page自带缓存优化，gzip等。
 
 ----
 
-####Part 2: 优化 pizza.html 的 FPS（每秒帧数）
+#### Part 2: 优化 pizza.html 的 FPS（每秒帧数）
 * querySelector* 这一类的方法相对比较消耗资源，替换为 getElements*这样一类方法
 * dx,newwidth,scrollTop 的计算只需要一次就可以，这样就可以将其移动到循环外部啦。
 * 设置left值可以用transform = translateX(100px)方式代替
