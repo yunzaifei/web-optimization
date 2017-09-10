@@ -8,13 +8,13 @@
 
 #### Part 1: 优化 index.html 的 PageSpeed Insights 得分
 
-### 图片优化
+##### 图片优化
 使用google pagespeed推荐的工具jpegtran和optipng无损压缩图片，或者使用[https://tinypng.com/](https://tinypng.com/)网站在线压缩图片。
 
-### 优化css
+##### 优化css
 将style.css文件中的样式复制到index.html中使用内联样式。
 
-### 部署github page
+##### 部署github page
 上传代码到github后部署github page网页，github page自带缓存优化，gzip等。
 
 ----
