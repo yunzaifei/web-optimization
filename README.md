@@ -15,6 +15,7 @@
 将style.css文件中的样式复制到index.html中使用内联样式。
 
 ##### 部署github page
+github page地址：[https://yunzaifei.github.io/web-optimization/](https://yunzaifei.github.io/web-optimization/)
 上传代码到github后部署github page网页，github page自带缓存优化，gzip等。
 
 ----
